@@ -1,0 +1,30 @@
+{% extends('layout.html.twig') %}
+
+{% block Content %}
+  <div class="container vh-100">
+    <div class="row h-100">
+      <div class="col-12 col-md-12">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="my-card card shadow">
+            <h4 class="my-card-title">Simple Todo Application</h4>
+
+            <div class="card-body">
+              <form action="/login-user" method="post">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="password">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Masuk</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

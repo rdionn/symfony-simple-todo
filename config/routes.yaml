@@ -1,0 +1,32 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+web_index:
+  path: /
+  controller: App\Controller\Web\WebController::index
+
+web_login:
+  path: /login-user
+  controller: .
+
+web_logout:
+  path: /logout
+  controller: .
+
+todo_api_get:
+  path: /api/todo/all
+  controller: App\Controller\Todo\ApiController::getTodos
+
+todo_api_create:
+  path: /api/todo/create
+  controller: App\Controller\Todo\ApiController::makeTodo
+
+
+todo_api_complete:
+  path: /api/todo/complete
+  controller: App\Controller\Todo\ApiController::completeTodo
+
+todo:
+  path: /todo
+  controller: App\Controller\Todo\TodoController::index

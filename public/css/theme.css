@@ -1,0 +1,16 @@
+body {
+  background-color: #3498db;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.my-card-title {
+  padding: 10px;
+  background-color: #bdc3c7;
+  text-align: center;
+}
+
+.my-card {
+  min-width: 310px;
+  max-width: 500px;
+  margin: auto;
+}
